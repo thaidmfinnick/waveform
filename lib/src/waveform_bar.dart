@@ -32,11 +32,11 @@ class WaveFormBar extends StatelessWidget {
   /// constrained to a range between 1 and 160, and multiplied by [maxHeight].
   Widget _buildWaveFormBar() {
     return Container(
-      width: 4,
-      height: (160 / amplitude.current.abs().clamp(1, 160)) * maxHeight,
+      width: 2,
+      height: (120 / amplitude.current.abs().clamp(1, 120)) * maxHeight,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(8),
       ),
       margin: const EdgeInsets.symmetric(horizontal: 2),
     );
